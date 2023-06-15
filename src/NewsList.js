@@ -45,3 +45,22 @@ const NewsList = ({navigation}) => { //declaramos una funcion(componente)
         </View>
     );
 };
+
+//Agregar estilo al componente NewsList
+
+const styles = Stylesheet.create({
+    container: {
+        flex: 1,
+        padding: 16,
+    },
+    newsItem: {
+        marginBotton: 16,
+    },
+    title: {
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    description:{
+        fontSize: 14,
+    },
+});
