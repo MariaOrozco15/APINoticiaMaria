@@ -1,24 +1,31 @@
-import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import NewsList from "./NewsList";
-import { View, StyleSheet } from "react-native";
+import NewsDetail from './NewsDetail'
 
+const stack = createNativeStackNavigator();
 
-
-const NewsList = () => {
+function App() {
     return(
-        <View style={styles.container}>
-            <Calculadora/>
-        </View>
-    )
+        <NavigationContainer>
+            <Stack.Navigator>
+            <Stack.Screen
+                name = "NewsList"
+                component = {NewsList}
+                options = {{title: 'Últimas noticias'}}
+            />
+              <Stack.Screen
+                name = "NewsDetail"
+                component = {NewsDetail}
+                options = {{title: 'Detalle de noticias'}}
+            />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-    },
-  });
-export default NewsList;
+
+export default App;
 
 
 
