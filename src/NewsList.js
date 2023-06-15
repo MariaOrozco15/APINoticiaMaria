@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, FlatList, TouchableOpacity, Stylesheet} from 'react-native';
-import axios from 'axios';
+import axios from 'axios'; //Bilioteca
 
 //Defina el componente NewsList como una funcion que devuelve la interfaz de usuario de la lista
 //de noticias
@@ -9,7 +9,7 @@ const NewsList = ({navigation}) => { //declaramos una funcion(componente)
     const [news, setNews] = useState([]); //crear un arreglo vacio con una variable de estado
 
     useEffect(() => {
-        fetchNews();
+        fetchNews();//realiza una solicitud GET a la API
     }, []);
 
     const fetchNews = async () => {
@@ -64,3 +64,4 @@ const styles = Stylesheet.create({
         fontSize: 14,
     },
 });
+export default NewsList;
