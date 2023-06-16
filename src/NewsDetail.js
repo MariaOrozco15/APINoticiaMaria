@@ -21,9 +21,12 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 18,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: 'green'
     },
     description: {
         fontSize: 14,
+        color: 'blue'
     },
 });
+export default NewsDetail;

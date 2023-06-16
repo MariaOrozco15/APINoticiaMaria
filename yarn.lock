@@ -6003,12 +6003,12 @@ react-native-gradle-plugin@^0.71.19:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz"
   integrity sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==
 
-"react-native-safe-area-context@>= 3.0.0":
+react-native-safe-area-context@^4.5.3, "react-native-safe-area-context@>= 3.0.0":
   version "4.5.3"
   resolved "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.5.3.tgz"
   integrity sha512-ihYeGDEBSkYH+1aWnadNhVtclhppVgd/c0tm4mj0+HV11FoiWJ8N6ocnnZnRLvM5Fxc+hUqxR9bm5AXU3rXiyA==
 
-"react-native-screens@>= 3.0.0":
+react-native-screens@^3.21.0, "react-native-screens@>= 3.0.0":
   version "3.21.0"
   resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.21.0.tgz"
   integrity sha512-SybzBhceTN2LUfzvEQxpZ9SchlFgEdsR/+YOKcpIhKg2BdRObdIyQsRoJBvduZ55lKbO9Gpyl3Ke8tngz3873g==
