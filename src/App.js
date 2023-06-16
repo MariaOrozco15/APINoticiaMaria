@@ -1,5 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavigationContainer } from "@react-navigation/native";//Biblioteca
+import { createNativeStackNavigator } from "@react-navigation/native-stack"; //permitir navegacion en una fila de pantalla
 
 import NewsList from "./NewsList";
 import NewsDetail from './NewsDetail'
