@@ -5,7 +5,7 @@ import axios from 'axios';
 const NewsList = ({navigation}) => {
   const [news, setNews] = useState([]);
 
-  const {container, title, newsItem, newsTitle, newsDescription} = styles;
+  const {container, title, newsItem, newsTitulo, newsDescripcion} = styles;
   useEffect(() => {
     fetchNews();
   }, []);
@@ -26,7 +26,7 @@ const NewsList = ({navigation}) => {
 
   return (
     <View style={container}>
-      <Text style={title}>Top headlines from TechCrunch right now</Text>
+      <Text style={title}>API DE US</Text>
       <FlatList
         data={news}
         renderItem={({item}) => (
@@ -34,8 +34,8 @@ const NewsList = ({navigation}) => {
             style={newsItem}
             key={item.id}
             onPress={() => navigation.navigate('NewsDetail', {newsItem: item})}>
-            <Text style={newsTitle}>{item.title}</Text>
-            <Text style={newsDescription}>{item.description}</Text>
+            <Text style={newsTitulo}>{item.title}</Text>
+            <Text style={newsDescripcion}>{item.description}</Text>
           </TouchableOpacity>
         )}
         keyExtractor={item => item.id?.toString()}
@@ -60,16 +60,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#323232',
     padding: 16,
     marginBottom: 16,
-    borderRadius: 8,
+    borderRadius: 10,
     elevation: 2,
   },
-  newsTitle: {
+  newsTitulo: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 8,
     color: '#F4F4F4',
   },
-  newsDescription: {
+  newsDescripcion: {
     fontSize: 14,
     color: '#CCCCCC',
   },
